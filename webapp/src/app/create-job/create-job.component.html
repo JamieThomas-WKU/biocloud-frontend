@@ -1,0 +1,162 @@
+<div class="biocloud-background"></div>
+<div class="biocloud-header">
+  <div class="biocloud-header-title">Bio-Cloud</div>
+  <div class="biocloud-header-nav">
+    <a class="biocloud-header-nav-item" routerLink="/login" routerLinkActive="active">Login</a>
+    |
+    <a class="biocloud-header-nav-item" routerLink="/create-job" routerLinkActive="active">Create Job</a>
+  </div>
+</div>
+<div class="biocloud-content">
+  <div class="create-job-stage-track">
+    <table>
+      <tr>
+        <td>
+          <div class="stage-marker">1</div>
+          <div class="stage-label">Select File</div>
+        </td>
+        <td>
+          <div class="stage-marker">2</div>
+          <div class="stage-label">Select Tool</div>
+        </td>
+        <td>
+          <div class="stage-marker">3</div>
+          <div class="stage-label">Configure Tool</div>
+        </td>
+        <td>
+          <div class="stage-marker stage-active">4</div>
+          <div class="stage-label">Review Job</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!--
+  <div class="create-job-stage-container">
+    <div class="create-job-stage-header">SELECT FILE</div>
+    <div class="create-job-stage-content">
+      <select class="create-job-file-select">
+        <option value="hide">-- Select File --</option>
+        <option value="1">File1.jpg</option>
+        <option value="2">File2.png</option>
+        <option value="3">File3.test</option>
+      </select> 
+      
+      <span class="creat-job-stage-error">You must select a file before continuing!</span>
+    </div>
+    <div class="biocloud-page-divider"></div>
+    <div class="create-job-stage-footer">
+      <div class="create-job-footer-nav">
+        <button class="create-job-stage-next biocloud-button">Next Step</button>
+      </div>
+    </div>
+  </div>
+  <div class="create-job-stage-container">
+    <div class="create-job-stage-header">SELECT TOOL</div>
+    <div class="create-job-stage-content">
+      <select class="create-job-file-select">
+        <option value="hide">-- Select Tool --</option>
+        <option value="1">FastQC</option>
+        <option value="2">Bowtie</option>
+      </select>
+      <span class="create-job-stage-subtitle">Tool Description</span>
+      <p class="create-job-stage-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. d do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      
+      <span class="creat-job-stage-error">You must select a BioTool to use before continuing!</span>
+    </div>
+    <div class="biocloud-page-divider"></div>
+    <div class="create-job-stage-footer">
+      <div class="create-job-footer-nav">
+        <button class="create-job-stage-back biocloud-button">Back</button>
+        <button class="create-job-stage-next biocloud-button">Next Step</button>
+      </div>
+    </div>
+  </div>
+  <div class="create-job-stage-container">
+    <div class="create-job-stage-header">CONFIGURE TOOL</div>
+    <div class="create-job-stage-content">
+      <select class="create-job-file-select">
+        <option value="hide">-- Select Command --</option>
+        <option value="1">Command 1</option>
+        <option value="2">Command 2</option>
+      </select>
+      <span class="create-job-stage-subtitle">Command Description</span>
+      <p class="create-job-stage-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. d do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <div class="biocloud-page-divider"></div>
+      <span class="create-job-stage-title">Required Arguments</span>
+      <table class="create-job-argument-table">
+        <tr>
+          <td>
+              <span class="create-job-stage-subtitle">Argument 1</span>
+              <p class="create-job-stage-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. d do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>        
+              <select class="create-job-file-select">
+                <option value="hide">-- Select Option --</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+              </select>
+            </td>
+        </tr>
+      </table>
+      <div class="biocloud-page-divider"></div>
+      <span class="create-job-stage-title">Optional Arguments</span>
+      <table class="create-job-argument-table">
+        <tr>
+          <td>
+              <span class="create-job-stage-subtitle">Argument 2</span>
+              <p class="create-job-stage-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. d do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>        
+              <select class="create-job-file-select">
+                <option value="hide">-- Select Option --</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="create-job-stage-subtitle">Argument 3</span>
+              <p class="create-job-stage-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. d do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>        
+              <select class="create-job-file-select">
+                <option value="hide">-- Select Option --</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+              </select>
+            </td>
+        </tr>
+      </table>
+
+      <span class="creat-job-stage-error">You must select an option for all required arguments!</span>
+    </div>
+    <div class="biocloud-page-divider"></div>
+    <div class="create-job-stage-footer">
+      <div class="create-job-footer-nav">
+        <button class="create-job-stage-back biocloud-button">Back</button>
+        <button class="create-job-stage-next biocloud-button">Next Step</button>
+      </div>
+    </div>
+  </div>
+  -->
+  <div class="create-job-stage-container">
+    <div class="create-job-stage-header">REVIEW JOB</div>
+    <div class="create-job-stage-content">
+      <span class="create-job-stage-subtitle">Selected File</span>
+      <p class="create-job-stage-paragraph">File 1</p>
+      <div class="biocloud-page-divider"></div>
+      <span class="create-job-stage-subtitle">Stage 1 - Command 1</span>
+      <ul>
+        <li>Argument 1 - Option 2</li>
+        <li>Argument 3 - Option 1</li>
+      </ul>
+      <div class="biocloud-page-divider"></div>
+      <span class="create-job-stage-subtitle">Stage 2 - Command 2</span>
+      <ul>
+        <li>Argument 1 - Option 1</li>
+      </ul>
+    </div>
+    <div class="biocloud-page-divider"></div>
+    <div class="create-job-stage-footer">
+      <div class="create-job-footer-nav">
+        <button class="create-job-stage-back biocloud-button">Add Another Step</button>
+        <button class="create-job-stage-next biocloud-button">Submit Job</button>
+      </div>
+    </div>
+  </div>
+</div>
